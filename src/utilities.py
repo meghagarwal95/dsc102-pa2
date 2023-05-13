@@ -230,7 +230,7 @@ def spark_init(pid):
     conf.set("spark.driver.host", driver_host)
     conf.set("spark.driver.port", "50500")
     conf.set("spark.cores.max", "6")
-    conf.set("spark.executor.memory", "20G")
+    conf.set("spark.executor.memory", "18G")
     conf.set('spark.authenticate', False)
     conf.set("spark.driver.memory", "8G")
     conf.set("spark.driver.extraLibraryPath", "/opt/hadoop/lib/native")
