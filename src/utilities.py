@@ -17,12 +17,13 @@ MASTER_IP = 'spark://0.0.0.0:7077'
 
 
 class data_cat:
-    review_filename = './../../../public/dataset_public/user_reviews_train.csv'
-    product_filename = './../../../public/dataset_public/metadata_header.csv'
-    product_processed_filename = './../../../public/dataset_public/product_processed.csv'
-    ml_features_train_filename = './../../../public/dataset_public/ml_features_train.parquet'
-    ml_features_test_filename = './../../../public/dataset_public/ml_features_test.parquet'
-    test_results_root = './../../../public/dataset_public/test_results'
+    root_folder = '/datasets/courses/dsc102/public/'
+    review_filename = root_folder + 'user_reviews_train.csv'
+    product_filename = root_folder + 'metadata_header.csv'
+    product_processed_filename = root_folder + 'product_processed.csv'
+    ml_features_train_filename = root_folder + 'ml_features_train.parquet'
+    ml_features_test_filename = root_folder + 'ml_features_test.parquet'
+    test_results_root = root_folder + 'test_results'
 
 
 def quantile(rdd, p, sample=None, seed=SEED):
